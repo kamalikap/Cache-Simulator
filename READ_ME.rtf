@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs48 \cf0 \ul \ulc0 LAB -2
+\b0\fs24 \ulnone 	\
+\
+					
+\b \ul Authors
+\b0 \ulnone \
+		\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+			1. Pratheek Chindodi Rajashekar(SID: - 862002345)\
+\
+			2. Kamalika Poddar(SID:-862002289)\
+		\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+This lab is completed by 
+\b Pratheek Chindodi Rajashekar and Kamalika Poddar
+\b0 .
+\b \
+
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b\fs36 \cf0 \ul Important
+\fs24  
+\b0 \ulnone : -  The filename \'93
+\b launchscript.sh
+\b0 \'94 is a Shell script to run the 2 Trace Files with different associativity. The below line of code can be used to run the Shell script: -\
+\
+      ->  
+\b ./launchscript.sh\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul \
+\
+Steps to execute(in detail) the Cache Simulator
+\b0 \ulnone : -\
+\
+1) Compile cachesim.cpp with the below lines of code:-\
+\
+      ->	
+\b g++ -c cachesim.cpp
+\b0 \
+\
+2) Produce an output file \'93cachesim\'94 with the below line of code: -\
+\
+      -> 	
+\b g++ cachesim.cpp -o cachesim
+\b0 \
+\
+3) Run the following lines of code to enable forwarding for different window sizes.\
+\
+      -> 	
+\b ./cachesim <Filename> <cache size in Bytes> <Block size in Bytes> <number of Ways>\
+
+\b0 \
+Example : - \
+\
+      -> 	./cachesim gcc-10K.memtrace 524288 16 0      // 0 for fully associative\
+      -> 	./cachesim gcc-10K.memtrace 524288 16 1     // 1 for Direct Mapped\
+      -> 	./cachesim gcc-10K.memtrace 524288 16 2     // 2 for 2-way set associative\
+\
+4) The above examples can be repeated for the other Trace File -> \'93gcc-1M.memtrace\'94 \
+\
+References : - \
+\
+1) https://github.com/chinmayachaudhry/Cache-Simulator-L1-L2--\
+2) https://github.com/magicole/simple-cache-simulator/blob/master/cacheSimulator.py\
+3) https://inst.eecs.berkeley.edu/~cs152/fa16/assignments/lab2.pdf\
+4) https://github.com/snie2012/computer-architecture-projects/tree/master/cache-simulator\
+5)https://github.com/dineshp23/Computer-Architecture-Simulation-Projects\
+6) https://github.com/rajatkhanduja/Processor-Cache-Simulator/blob/master/src/cache.cpp\
+7) https://github.com/srikantaggarwal/Cache-Coherence\
+8) https://github.com/vasia/cache-simulator\
+9)https://github.com/snie2012/computer-architecture-projects\
+}
